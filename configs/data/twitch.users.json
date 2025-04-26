@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "661d2e8d13fd6ca90f08e7d0"
+  },
+  "email": "pablo@gmail.com",
+  "username": "Pablo",
+  "password": "$2a$10$u0cePY5nMaLPJpCPHGkjx.AQEr9Uathh68t4zUDimD0PPsG73Q1ti",
+  "channel": {
+    "$oid": "661d2e8d13fd6ca90f08e7ce"
+  },
+  "followedChannels": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661d2e9e13fd6ca90f08e7d5"
+  },
+  "email": "elmer@gmail.com",
+  "username": "ElmerR",
+  "password": "$2a$10$YWs4WHbpLHKn2nlwO6FNk.VAPQzHSZbYNBJfjeM2Gp2Th7h3CCtNu",
+  "channel": {
+    "$oid": "661d2e9e13fd6ca90f08e7d3"
+  },
+  "followedChannels": [
+    {
+      "$oid": "661d2e8d13fd6ca90f08e7ce"
+    },
+    {
+      "$oid": "661d2e9e13fd6ca90f08e7d3"
+    },
+    {
+      "$oid": "661d2ea913fd6ca90f08e7d8"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661d2ea913fd6ca90f08e7da"
+  },
+  "email": "rodrigo@gmail.com",
+  "username": "Rodrigo",
+  "password": "$2a$10$KmG2RMx0Gpc0M4nY/31KEu4YLkZwyxRJY1iO0cFgL.kvj/GHzjf/2",
+  "channel": {
+    "$oid": "661d2ea913fd6ca90f08e7d8"
+  },
+  "followedChannels": [],
+  "__v": 0
+}]

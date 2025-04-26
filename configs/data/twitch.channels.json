@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "661d2e8d13fd6ca90f08e7ce"
+  },
+  "isActive": true,
+  "title": "Bienvenido a mi canal",
+  "description": "This is a new channel",
+  "avatarUrl": "https://cdn.conmebol.com/wp-content/uploads/2023/06/000_334P84K-1024x683.jpg",
+  "messages": [],
+  "streamKey": "0ac51183-c5cb-4886-a264-58027cc0fa14",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661d2e9e13fd6ca90f08e7d3"
+  },
+  "isActive": true,
+  "title": "Este es mi canal Actualizado",
+  "description": "This is a new channelLL",
+  "avatarUrl": "https://s.france24.com/media/display/451ed2b8-eed6-11ea-afdd-005056bf87d6/w:1280/p:16x9/messi-1805.jpg",
+  "messages": [],
+  "streamKey": "5ce03da0-3323-417c-9e68-29f64b3fb913",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661d2ea913fd6ca90f08e7d8"
+  },
+  "isActive": true,
+  "title": "Hola y bienvenido a mi canal",
+  "description": "This is a new channel",
+  "avatarUrl": "https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/2022-12/681476-48216-lionel-2520messi-0.jpg?h=3dbd9eac&itok=d2tNPAXm",
+  "messages": [],
+  "streamKey": "04aa0c72-16e0-4d85-9160-e65edb962225",
+  "__v": 0
+}]

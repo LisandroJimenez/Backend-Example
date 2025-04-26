@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "2b66b0d1-6112-4eb7-a05e-b49082875d61",
+		"name": "twitch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32787282"
+	},
+	"item": [
+		{
+			"name": "Channel",
+			"item": [
+				{
+					"name": "FindChannelById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/channels/661d2e8d13fd6ca90f08e7ce",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"channels",
+								"661d2e8d13fd6ca90f08e7ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListChannels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/channels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"channels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindMyChannel",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2VkM2Q5ZTMzNzcwMjA1MDllZGIyY2UiLCJlbWFpbCI6ImVzYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzQzNjAzMDM1LCJleHAiOjE3NDM2MzE4MzV9.wO3x4hq7pWY6sS76xGebu98X7zZfwja0N3WMTO11m-I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/settings/channel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"settings",
+								"channel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FollowChannel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2VkM2Q5ZTMzNzcwMjA1MDllZGIyY2UiLCJlbWFpbCI6ImVzYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzQzNjAzMDM1LCJleHAiOjE3NDM2MzE4MzV9.wO3x4hq7pWY6sS76xGebu98X7zZfwja0N3WMTO11m-I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"channelId\": \"661d2e8d13fd6ca90f08e7ce\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/channels/follow",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"channels",
+								"follow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListFollowedChannels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2VkM2Q5ZTMzNzcwMjA1MDllZGIyY2UiLCJlbWFpbCI6ImVzYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzQzNjAzMDM1LCJleHAiOjE3NDM2MzE4MzV9.wO3x4hq7pWY6sS76xGebu98X7zZfwja0N3WMTO11m-I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/channels/followed",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"channels",
+								"followed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSettingChannel",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2VkM2Q5ZTMzNzcwMjA1MDllZGIyY2UiLCJlbWFpbCI6ImVzYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzQzNjAzMDM1LCJleHAiOjE3NDM2MzE4MzV9.wO3x4hq7pWY6sS76xGebu98X7zZfwja0N3WMTO11m-I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"esantos\",\r\n    \"title\": \"New Channell!!!\",\r\n    \"description\": \"Hello this is my new channel!!!\",\r\n    \"avatarUrl\": \"https://a.espncdn.com/photo/2022/1218/r1108256_1296x729_16-9.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/settings/channel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"settings",
+								"channel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangePassword",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2VkM2Q5ZTMzNzcwMjA1MDllZGIyY2UiLCJlbWFpbCI6ImVzYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzQzNjAzMDM1LCJleHAiOjE3NDM2MzE4MzV9.wO3x4hq7pWY6sS76xGebu98X7zZfwja0N3WMTO11m-I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"123456\",\r\n    \"newPassword\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/settings/password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"settings",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"esantos\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"esantos@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"esantos@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/twitch/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"twitch",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
